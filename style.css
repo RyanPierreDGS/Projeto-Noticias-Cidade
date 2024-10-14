@@ -1,0 +1,248 @@
+ /* --------------- estilização padrão */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: trebuchet MS, Arial, Helvetica, sans-serif;
+    background: #fff url(imagens/fundo.png) repeat-x;
+}
+
+/*---------------------------------------Definindo Padrões */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*--------------------------------------------------estilizando header */
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#topo{
+    max-height: 155px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+#menu_topo ul {
+    display: inline-flex;
+    margin-bottom: 18px;
+    background: #b10333;
+}
+
+#menu_topo ul a {
+    display: block;
+    padding: 8px 16px;
+    background: url(imagens/divisor.png) no-repeat left center;
+}
+
+/*-----------------Como padrão o divisor iria repetir no primeiro item do menu, essa linha de código remove o divisor*/
+#menu_topo ul .primeiro_list a{
+    background: none;
+}
+
+/*----------------- Estilizando padrão hover do menu navegação */
+
+#menu_topo ul a:hover{
+    color: #69001d;
+    border-bottom: 2px solid white ;
+}
+
+/*----------------Na navegação ele deixa marcado qual página o usuário está */
+body.home #menu_topo a#home, body.economia #menu_topo a#economia,
+body.saude #menu_topo a#saude, body.ciencia #menu_topo a#ciencia,
+body.brasil #menu_topo a#brasil, body.internacional #menu_topo a#internacional,
+body.fotos #menu_topo a#fotos{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+
+
+#conteudo{
+    margin: 60px auto;
+    background: #f5f5f5;
+    width: 750px;
+}
+
+/* ---------------- colunas*/
+#tres_colunas #primario {
+    width: 270px;
+    float: left;
+    margin: 0px 0px 20px 195px;
+}
+
+#duas_colunas #primario {
+    width: 555px;
+    float: left;
+    margin: 0px 0px 20px 195px;
+}
+
+#uma_coluna #primario {
+    width: 750px;
+    float: left;
+    margin: 0px 0px 20px 0px;
+}
+/*------------------------------- */
+
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0px 0px 20px 15px;
+}
+
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0px 0px 20px -750px;
+}
+
+.caixa{
+    background: #f3f3f3 url(imagens/fundo-caixa.png);
+    margin: 10px 0px;
+    padding: 5px 0px 5px 0px;
+    
+}
+
+h2{
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa_conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*-----------------------Estilização de Pesquisa Lateral Vertical */
+
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    color: #a1a1a1;
+    background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+/*---------------------------------------Definindo form input de lateral*/
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    width: 125px;
+    font-size: 0.9em;
+    background: #f3f3f3;
+    padding: 5px;
+}
+
+input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/*---------------------------------------Definindo padrão de caixa das colunas secundaria e principal */
+
+img{
+    border: 2px solid #dfdfdf;
+}
+
+img.imagem_principal{
+    border: 3px solid #dfdfdf;
+    width: 98%;
+}
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3{
+    background: #de003e;
+}
+
+/*---------------------------------------Definindo lista de noticias abaixo de ultimas noticias */
+
+#lista_noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista_noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#lista_noticias li a{
+    font-size: 0.8em;
+}
+
+#lista_noticias li a h3{
+    font-size: 0.8em;
+    padding: 0px;
+    color: #3e7ab9;
+}
+
+#lista_noticias li a p{
+    font-size: 0.7em;
+}
+
+#lista_noticias li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+/*---------------------------------------Definindo do Rodapé */
+
+footer{
+    background: #294c71;
+    padding: 20px;
+}
+
+footer #rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
